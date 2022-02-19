@@ -47,9 +47,13 @@ img {
   max-width: 100%;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
-  padding-bottom: 94px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -58,6 +62,8 @@ img {
 
 /* Header */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -67,9 +73,7 @@ img {
 }
 
 .header-logo-link {
-  margin-top: 24px;
   margin-right: 94px;
-  margin-bottom: 25px;
 
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -194,9 +198,12 @@ img {
 }
 
 /* Features */
+.features {
+  padding-bottom: 0;
+}
+
 .features-list {
   display: flex;
-  margin-top: 94px;
 }
 
 .features-list-item {
@@ -256,7 +263,6 @@ img {
 }
 
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: bold;
@@ -281,8 +287,13 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-img {
-  margin-bottom: 30px;
+.team-list-item:last-child {
+  margin-right: 0;
+}
+
+.team-list-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list-title {
@@ -297,8 +308,6 @@ img {
 }
 
 .team-list-text {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -314,7 +323,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
 }
 
 .portfolio-filter-list-item:not(:last-child) {
@@ -348,13 +357,13 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .portfolio-list-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
   background-color: #fff;
 }
@@ -369,6 +378,8 @@ img {
 }
 
 .portfolio-list-subtitle {
+  margin-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -384,12 +395,10 @@ img {
 
 /* Footer */
 .footer {
-  background-color: var(--background-dark-color);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--background-dark-color);
 }
 
 .footer-logo-link {
@@ -405,11 +414,6 @@ img {
 
 .footer-logo-link > span {
   color: #ffffff;
-}
-
-.adress {
-  display: flex;
-  flex-direction: column;
 }
 
 .adress-text {

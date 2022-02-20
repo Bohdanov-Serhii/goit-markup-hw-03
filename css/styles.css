@@ -315,19 +315,14 @@ img {
 }
 
 /* Portfolio */
-.portfolio-container {
-  margin-top: 94px;
-}
-
 .portfolio-filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
-  /* padding-bottom: 16px; */
 }
 
 .portfolio-filter-list-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-filter-list-btn {
